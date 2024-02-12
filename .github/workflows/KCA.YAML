@@ -1,0 +1,12 @@
+name: KCA
+
+on:
+ schedule:
+  - cron: '*1 * * * *'
+jobs:
+ ping-codespace:
+  runs-on: ubuntu-latest
+
+  steps:
+   - name: Ping Codespace
+     run: curl -sS https://cuddly-space-waffle-xjr7rr57j7ghv445.github.dev/
